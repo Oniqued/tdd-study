@@ -152,6 +152,4 @@ public class ExpirationDateCalculatorTest {
         LocalDate expirationDate = calculator.calculateExpirationDate(paymentData);
         assertEquals(expectedExpirationDate, expirationDate);
     }
-
-
 }
