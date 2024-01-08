@@ -12,7 +12,7 @@ public class UserRegister {
     }
 
     public void register(String id, String pw, String email) {
-        if (passwordChecker.isWeak(pw)) {
+        if (passwordChecker.checkPasswordWeak(pw)) {
             throw new WeakPasswordException();
         }
         User user = userRepository.findById(id);
