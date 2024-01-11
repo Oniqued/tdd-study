@@ -1,5 +1,8 @@
 package ch07.user;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class UserRegister {
     private WeakPasswordChecker passwordChecker;
     private UserRepository userRepository;
